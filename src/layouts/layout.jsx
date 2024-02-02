@@ -1,21 +1,22 @@
 
 import Divider from '@mui/material/Divider';
 
-import AppToolbar from "./AppToolBar"
-import BasicMenu from './Menu';
+import AppToolbar from "../Components/AppToolBar"
+
 import { Box } from '@mui/system';
 import React from 'react';
 import Grid from '@mui/material/Grid';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import BestSellingProducts from './BestSellingProducts';
+import BestSellingProducts from '../Components/BestSellingProducts';
+import CartComponent from '../Components/CartComponent';
 
 
 
 import '../styles/Grid.css'
 
 import Hidden from '@mui/material/Hidden';
-import SliderComponent from './Slider';
- import BestSellingCategoery from './BestSellingCategoery' 
+import SliderComponent from '../Components/Slider';
+ import BestSellingCategoery from '../Components/BestSellingCategoery' 
 import { useQuery } from 'react-query';
 import axios from 'axios';
 
@@ -57,7 +58,7 @@ const Layout = () => {
                     <BestSellingCategoery title="Best selling Categories" products={products} />
 
                     <BestSellingProducts buttonText="Quick View"></BestSellingProducts>
-
+                  
                 </Box>
             </Box>
 
