@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography';
 import Chip from '@mui/material/Chip';
 import { Box } from '@mui/system';
 import { useTheme } from '@mui/material/styles';
-import useMediaQuery from '@mui/material/useMediaQuery';
+
 
 function AppToolbar({ backgroundColor, textColor, height, text }) {
   const theme = useTheme();
@@ -13,13 +13,14 @@ function AppToolbar({ backgroundColor, textColor, height, text }) {
     minHeight: height || '80px',
     backgroundColor: backgroundColor,
     color: textColor || '#FFFFFF',
-    width: '100%', // Set width to 100%
-    position: 'fixed', // Make the Toolbar fixed at the top
-   top:0
+   
+      
+   
+   
   };
 
   return (
-    <Toolbar style={toolbarStyle}>
+    <Toolbar style={toolbarStyle} >
       <Box
         sx={{
           display: 'flex',

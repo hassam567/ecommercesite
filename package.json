@@ -1,5 +1,5 @@
 {
-  "homepage": "https://hassam567.github.io/ecommercesite",
+  "homepage":"http://localhost:3000",
   "name": "ecommerce_site",
   "version": "0.1.0",
   "private": true,

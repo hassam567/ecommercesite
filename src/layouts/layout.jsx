@@ -1,20 +1,16 @@
 
-import Divider from '@mui/material/Divider';
 
-import AppToolbar from "../Components/AppToolBar"
 
 import { Box } from '@mui/system';
 import React from 'react';
 import Grid from '@mui/material/Grid';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import BestSellingProducts from '../Components/BestSellingProducts';
-import CartComponent from '../Components/CartComponent';
-
 
 
 import '../styles/Grid.css'
 
-import Hidden from '@mui/material/Hidden';
+
 import SliderComponent from '../Components/Slider';
  import BestSellingCategoery from '../Components/BestSellingCategoery' 
 import { useQuery } from 'react-query';
@@ -51,17 +47,19 @@ const Layout = () => {
   
     return (
         <>
-            <Box  >
+         
       
-                <Box>
+              
                     <SliderComponent slides={slides} buttonText="Shop Now" />
                     <BestSellingCategoery title="Best selling Categories" products={products} />
 
                     <BestSellingProducts buttonText="Quick View"></BestSellingProducts>
                   
-                </Box>
-            </Box>
-
+                  
+                  
+          
+          
+          
         </>
     )
 }
